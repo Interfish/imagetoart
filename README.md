@@ -22,7 +22,7 @@ This is just a primitive version for demo purpose. So for now no usage instructi
 is comming.
 
 # Reference
-For the Caffe library, we use a modified version of Caffe:[Caffe supports CRFASRNN](https://github.com/bittnt/caffe/tree/70856cd28a10e2592b4d5ba1ae05cf6b59824a37)
+For the Caffe library, we use a modified version of Caffe: [Caffe supports CRFASRNN](https://github.com/bittnt/caffe/tree/70856cd28a10e2592b4d5ba1ae05cf6b59824a37)
 
 For the style transferring part, we use [Style transfer by fzliu](https://github.com/fzliu/style-transfer)
 
