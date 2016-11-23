@@ -9,10 +9,12 @@ different styles. Then it will gernerate a mask from input image. Finally, it wi
 
 
 Our implementation is built on [Caffe](http://caffe.berkeleyvision.org/) deep learning library. The current version was developed by 
-team CodePlay:
+team <b>CodePlay</b>:
 
 Ruotong Wang
+
 Kirkman Stephen
+
 Xiyuan Gou
 
 # Usage
