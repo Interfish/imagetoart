@@ -1,0 +1,58 @@
+[01/Nov/2016 16:05:16] "GET / HTTP/1.1" 200 1179
+Not Found: /favicon.ico
+[01/Nov/2016 16:05:16] "GET /favicon.ico HTTP/1.1" 404 2343
+[01/Nov/2016 16:05:35] "GET / HTTP/1.1" 200 1179
+[01/Nov/2016 16:11:49] "GET / HTTP/1.1" 200 1179
+Not Found: /favicon.ico
+[01/Nov/2016 16:11:49] "GET /favicon.ico HTTP/1.1" 404 2343
+[01/Nov/2016 16:56:28] "GET / HTTP/1.1" 200 1179
+[01/Nov/2016 16:56:28] "GET /static/CodePlayBackground.jpg HTTP/1.1" 200 104284
+Not Found: /favicon.ico
+[01/Nov/2016 16:56:28] "GET /favicon.ico HTTP/1.1" 404 2343
+[01/Nov/2016 16:57:38] "GET / HTTP/1.1" 200 1179
+Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "/home/ubuntu/django/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/home/ubuntu/django/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/django/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/imagetoart/formupload/views.py", line 52, in upload
+    handle_uploaded_file(request.FILES['file'], str(request.FILES['file']))
+  File "/home/ubuntu/django/django/utils/datastructures.py", line 85, in __getitem__
+    raise MultiValueDictKeyError(repr(key))
+MultiValueDictKeyError: "'file'"
+[01/Nov/2016 16:58:04] "POST /upload/ HTTP/1.1" 500 66930
+[01/Nov/2016 16:59:42] "POST /upload/ HTTP/1.1" 200 14
+[01/Nov/2016 17:00:02] "POST /upload/ HTTP/1.1" 200 14
+Internal Server Error: /submit
+Traceback (most recent call last):
+  File "/home/ubuntu/django/django/core/handlers/exception.py", line 38, in inner
+    response = get_response(request)
+  File "/home/ubuntu/django/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/django/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/imagetoart/formupload/views.py", line 106, in submit
+    execfile('style.py -s ./images/style/starry_night.jpg -c ./images/content/nanjing.jpg -m vgg16 -g -1 -o ./outputs/test_nanjing.jpg')
+IOError: [Errno 2] No such file or directory: 'style.py -s ./images/style/starry_night.jpg -c ./images/content/nanjing.jpg -m vgg16 -g -1 -o ./outputs/test_nanjing.jpg'
+[01/Nov/2016 17:00:12] "GET /submit? HTTP/1.1" 500 62497
+[01/Nov/2016 17:00:13] "GET / HTTP/1.1" 200 1179
+Not Found: /favicon.ico
+[01/Nov/2016 17:00:13] "GET /favicon.ico HTTP/1.1" 404 2343
+Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
+[01/Nov/2016 17:35:26] "GET http://www.baidu.com/cache/global/img/gs.gif HTTP/1.1" 404 1729
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 05, 2016 - 22:38:23
+Django version 1.11.dev20161101144811, using settings 'imagetoart.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[05/Nov/2016 22:39:15] "GET / HTTP/1.1" 200 1181
+[06/Nov/2016 18:01:20] "GET / HTTP/1.1" 200 1327
+[06/Nov/2016 21:56:01] "GET / HTTP/1.1" 200 1327
+[06/Nov/2016 21:56:02] "GET /static/CodePlayBackground.jpg HTTP/1.1" 200 104284
+Not Found: /favicon.ico
+[06/Nov/2016 21:56:02] "GET /favicon.ico HTTP/1.1" 404 2343

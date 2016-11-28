@@ -1,0 +1,99 @@
+<html>
+<head>
+	
+  	<title>CodePlay</title>
+  <style>
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #FFFFFF;
+      text-align: center
+    }
+    table {
+      margin: auto;
+    }
+  </style>
+</head>
+ 
+<body>
+	
+
+  <h1>
+      {{what}}
+  </h1>
+  <table>
+    <tr>
+      <td>
+
+          
+    
+        <form action="{{ request.build_absolute_uri }}upload/" method="POST" enctype="multipart/form-data">
+          <input type="file" id="content" name="file"/>
+          <br />
+          <input type="submit" name="content" value="Upload Content Image" />
+	</form>
+	</td>
+
+
+      <td>
+ 	<form action="{{ request.build_absolute_uri }}upload/" method="POST" enctype="multipart/form-data">
+          <input type="file" id="style" name="file"/>
+          <br />
+          <input type="submit" name="style1" value="Upload Style for Person" />
+	</form>
+	</td>
+
+
+      <td>
+ 	<form action="{{ request.build_absolute_uri }}upload/" method="POST" enctype="multipart/form-data">
+          <input type="file" id="style" name="file"/>
+          <br />
+          <input type="submit" name="style2" value="Upload Background Style" />
+	</form>
+
+	</td>
+	</tr>
+
+
+	<tr>
+	<td>
+	<form action="submit"  method="POST">
+    		<input type="submit" name="create"  value="Create ImageToArt">
+	</form>
+
+	
+
+	<form action="submit"  method="POST">
+    		<input type="submit" name="reset" value="Reset file locations">
+	</form>
+
+      </td>
+
+
+
+
+
+
+
+    </tr>
+  </table>
+
+<div style="justify-content: center;">
+{% load staticfiles %}
+
+<style type="text/css">
+        body { 
+         background: url('{% static "CodePlayBackground-noword.jpg" %}') center center fixed; 
+         -webkit-background-size: contain;
+         -moz-background-size: contain;
+         -o-background-size: contain;
+         background-size: contain;
+	 
+        }
+</style>
+
+
+</div>
+</body>
+ 
+</html>
