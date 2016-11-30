@@ -17,6 +17,10 @@ Kirkman Stephen
 
 Xiyuan Gou
 
+# Webpage
+This is our webpage.
+![sample](website.jpg)
+
 # Usage
 This is just a primitive version for demo purpose. So for now no usage instruction provided. Second version with usage instructions 
 is comming.
