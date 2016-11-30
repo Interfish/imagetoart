@@ -19,7 +19,7 @@ Xiyuan Gou
 
 # Webpage
 This is our webpage.
-![sample](website.jpg)
+![sample](webpage.jpg)
 
 # Usage
 This is just a primitive version for demo purpose. So for now no usage instruction provided. Second version with usage instructions 
